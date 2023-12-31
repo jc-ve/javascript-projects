@@ -1,45 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap");
+
+:root {
+  --clr-primary: #0a0a23;
+  --clr-white: #fff;
+  --clr-red: #c70d0d;
+  --clr-yellow: #feac32;
+
+  --clr-yellow-light: #fecc4c;
+  --clr-yellow-dark: #ffac33;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
-  background-color: #0a0a23;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--clr-primary);
+  overflow-y: hidden;
+}
+
+.section-game {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-primary {
+  font-family: "Press Start 2p";
+  color: var(--clr-white);
+  margin-bottom: 3rem;
 }
 
 #text {
-  background-color: #0a0a23;
-  color: #ffffff;
-  padding: 10px;
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  padding: 1rem;
 }
 
 #game {
-  max-width: 500px;
-  max-height: 400px;
-  background-color: #ffffff;
-  color: #ffffff;
-  margin: 30px auto 0px;
-  padding: 10px;
+  max-width: 50rem;
+  max-height: 40rem;
+  background-color: var(--clr-white);
+  color: var(--clr-white);
+  padding: 1rem;
 }
 
 #controls,
 #stats {
-  border: 1px solid #0a0a23;
+  border: 1px solid var(--clr-primary);
   padding: 5px;
-  color: #0a0a23;
+  color: var(--clr-primary);
 }
 
 #monsterStats {
   display: none;
-  border: 1px solid #0a0a23;
+  border: 1px solid var(--clr-primary);
   padding: 5px;
-  color: #ffffff;
-  background-color: #c70d0d;
+  color: var(--clr-white);
+  background-color: var(--clr-red);
 }
 
 .stat {
-  padding-right: 10px;
+  padding-right: 1rem;
 }
 
 button {
   cursor: pointer;
-  color: #0a0a23;
-  background-color: #feac32;
-  background-image: linear-gradient(#fecc4c, #ffac33);
-  border: 3px solid #feac32;
+  color: var(--clr-primary);
+  background-color: var(--clr-yellow);
+  background-image: linear-gradient(
+    var(--clr-yellow-light),
+    var(--clr-yellow-dark)
+  );
+  border: 3px solid var(--clr-yellow);
 }
